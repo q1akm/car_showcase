@@ -1,24 +1,20 @@
-import type { Metadata } from "next";
 import "./globals.css";
-import { Footer, Navbar } from "@/components";
 
-export const metadata: Metadata = {
-  title: "Car showcase",
-  description: "Discover best cars in the world.",
+import { Footer, NavBar } from "@/components";
+
+export const metadata = {
+  title: "Car Hub",
+  description: "Discover world's best car showcase application",
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
-      <body className="relative">
-        <Navbar/>
+    <html lang='en'>
+      <body className='relative'>
+        <NavBar />
         {children}
-        <Footer/>
-        </body>
+        <Footer />
+      </body>
     </html>
   );
 }
