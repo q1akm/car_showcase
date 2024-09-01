@@ -34,16 +34,20 @@ const Footer = () => (
       </div>
     </div>
 
-    <div className='flex justify-between items-center flex-wrap mt-10 border-t border-gray-100 sm:px-16 px-6 py-10'>
-      <p>@2023 CarHub. All rights reserved</p>
+    <div className='bg-black flex justify-between items-center flex-wrap mt-10 border-t border-gray-100 sm:px-16 px-6 py-8'>
+      <p className="text-white">@2023 CarHub. All rights reserved</p>
 
       <div className="footer__copyrights-link">
-        <Link href="/" className="text-gray-500">
+        <h1 className="text-white">
+        Code by <a href="https://aungkaungmyint.com/" className="text-[#730000] font-bold" target="_blank" rel="noopener noreferrer">q1akm</a>
+        </h1>
+        <Link href="/" className="text-white">
           Privacy & Policy
         </Link>
-        <Link href="/" className="text-gray-500">
+        <Link href="/" className="text-white">
           Terms & Condition
         </Link>
+      
       </div>
     </div>
   </footer>
